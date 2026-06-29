@@ -249,6 +249,7 @@ main() {
     add_jail_user_to_list_persist_bind_mount        
     configure_x11
     usermod -aG docker "$USERNAME"
+    usermod -aG users "$USERNAME"
     usermod -s /bin/bash "$USERNAME"
 
     echo ""
